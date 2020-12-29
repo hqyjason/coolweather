@@ -120,7 +120,7 @@ public class ChooseAreaFragment extends Fragment {
                     String weatherId = countryList.get(position).getWeatherId();
                     Intent intent = new Intent(getActivity(),WeatherActivity.class);
                     intent.putExtra("weather_id",weatherId);
-                    Log.e("fragment-weather_id",weatherId);
+                    Log.e("weather_id",weatherId);
                     startActivity(intent);
                     getActivity().finish();
                 }
